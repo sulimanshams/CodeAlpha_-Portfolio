@@ -35,7 +35,7 @@ export default function Bio(){
             viewport={{ once: true, margin: '-100px'}}
             >
                   <motion.h2 variants={itemVariants}
-                   className="text-4x1 md:text-5x1 font-bold text-white text-center mb-12"
+                   className="text-4xl md:text-5xl font-bold text-white text-center mb-12"
                   >
                     I&apos;m a Front-End Developer.
                   </motion.h2>
