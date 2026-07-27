@@ -61,7 +61,7 @@ export default function Skills(){
                      whileInView={{opacity:1 , y:0}}
                      viewport={{once:true}}
                      transition={{duration:0.6}}
-                     className="tex-center mb-16"
+                     className="text-center mb-16"
                      >
                           <p className="text-purple-400 font-semibold mb-2">
                             Skills & Tools
