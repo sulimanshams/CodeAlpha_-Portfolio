@@ -4,10 +4,8 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import type { Variants } from "framer-motion";
 
-
-
 export default function Hero() {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -19,16 +17,16 @@ export default function Hero() {
   };
 
   const itemVariants: Variants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      ease: "easeInOut", 
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeInOut" as const, 
+      },
     },
-  },
-};
+  };
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-20 px-4 relative overflow-hidden">
