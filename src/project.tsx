@@ -3,6 +3,11 @@
 import { motion } from "framer-motion"; 
 import E from "@/public/wwe.png"
 import W from "@/public/e2.png"
+import P from "@/public/P.png"
+import B from "@/public/B.png"
+import Q from "@/public/q.png"
+
+
 import Image from "next/image";
 
 const projects = [
@@ -32,6 +37,49 @@ const projects = [
     ],
     image: E,
   },
+   {
+    id: 3,
+    title: 'Personal Portfolio Website',
+    subtitle: 'Frontend Developer Portfolio',
+    description:
+      'A sleek and responsive portfolio website showcasing my projects, skills, and experience. Designed with modern UI principles, smooth animations, and optimized performance.',
+    features: [
+      'Responsive Design',
+      'Smooth Animations (Framer Motion)',
+      'Modern UI/UX',
+    ],
+    image:P,
+  },
+  {
+  id: 4,
+  title: 'Bank Account Dashboard',
+  subtitle: 'Advanced React Fintech App',
+  description:
+    'A modern banking dashboard built as a practice project using advanced React concepts. The application simulates a real-world fintech experience, allowing users to manage accounts, view balances, and track transactions in an intuitive interface.',
+  
+  features: [
+    'Account Balance Management',
+    'Transaction History Tracking',
+    'State Management with Advanced React',
+    'Reusable Component Architecture',
+  ],
+
+  image:B,
+},
+{
+  id: 5,
+  title: 'React Quiz App',
+  subtitle: 'Interactive Learning Platform',
+  description:
+    'An advanced interactive quiz application built with React, designed to provide a smooth and engaging learning experience. The project focuses on dynamic state management, reusable components, and real-time user interaction.',
+  features: [
+    'Dynamic Question Rendering',
+    'State Management with React Hooks',
+    'Real-time Score Tracking',
+    'Interactive UI Feedback',
+  ],
+  image: Q,
+}
 ];
 
 export function Project() {

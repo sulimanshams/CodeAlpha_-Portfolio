@@ -61,7 +61,7 @@ export default function Hero() {
           >
             <div className="glow-purple w-40 h-40 md:w-48 md:h-48 rounded-3xl bg-gradient-to-br from-purple-500/30 to-purple-800/30 border border-purple-500/50 flex items-center justify-center">
               <div className="w-36 h-36 md:w-44 md:h-44 bg-gradient-to-br from-slate-200 to-slate-400 rounded-2xl flex items-center justify-center text-3xl font-bold text-slate-800">
-                 <Image src="/Profile.png" alt="Profile" width={176} height={176}  className="object-cover w-full h-full rounded-2xl" />
+                 <Image src="/Profile.jpg" alt="Profile" width={176} height={176}  className="object-cover w-full h-full rounded-2xl" />
               </div>
             </div>
           </motion.div>
@@ -80,7 +80,11 @@ export default function Hero() {
 
         {/* CTA Button */}
         <motion.div variants={itemVariants}>
-          <button className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
+          <button className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105"
+          onClick={() => {
+              document.getElementById('lab')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             View My Work
           </button>
         </motion.div>
@@ -92,7 +96,9 @@ export default function Hero() {
         transition={{ duration: 2, repeat: Infinity }}
         className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
       >
-        <div className="w-6 h-10 border-2 border-purple-500/50 rounded-full flex justify-center">
+        <div className="w-6 h-10 border-2 border-purple-500/50 rounded-full flex justify-center"
+         onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
+        >
           <div className="w-1 h-3 bg-purple-500 rounded-full mt-2"></div>
         </div>
       </motion.div>
