@@ -87,7 +87,7 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 whileTap={{ scale: 0.95 }}
-                className={`text-3xl ${link.color} transition-colors duration-300`}
+                className={`text-3xl sm:text-4xl text-slate-100/90 md:text-slate-200 active:text-purple-300 active:scale-110 transition-all duration-300 rounded-full p-3 bg-slate-900/50 md:bg-transparent ${link.color}`}
                 title={link.name}
               >
                 {link.icon}

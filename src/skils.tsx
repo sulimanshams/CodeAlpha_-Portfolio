@@ -91,7 +91,8 @@ export default function Skills(){
                                     rotate: 5,
                                     transition: { duration: 0.2 },
                                 }}
-                                className="bg-gradient-to-br from-purple-600/20 to-purple-700/10 border border-purple-500/30 rounded-2xl p-4 flex flex-col items-center justify-center text-center hover:border-purple-400/60 transition-all duration-300 cursor-pointer group"
+                                whileTap={{ scale: 0.95 }}
+                                className="bg-gradient-to-br from-purple-600/20 to-purple-700/10 border border-purple-500/30 rounded-2xl p-4 flex flex-col items-center justify-center text-center hover:border-purple-400/60 active:scale-95 transition-all duration-300 cursor-pointer group"
                                 >
                                  <div className="text-4xl mb-2 group-hover:scale-125 transition-transform duration-300">
                                         <Icon />

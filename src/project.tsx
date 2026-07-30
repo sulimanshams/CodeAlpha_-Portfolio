@@ -165,18 +165,19 @@ export function Project() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                   whileHover={{ scale: 1.05 }}
-                  className="flex-1"
+                  className="flex-1 w-full"
                 >
-                  <div className="relative rounded-3xl aspect-square overflow-hidden group cursor-pointer border border-purple-500/30">
+                  <div className="relative h-64 sm:h-72 md:h-auto md:aspect-square overflow-hidden rounded-3xl border border-purple-500/30 bg-slate-900/80 shadow-[0_0_40px_rgba(168,85,247,0.12)] group cursor-pointer">
 
                     <Image
                       src={project.image}
                       alt={project.title}
                       fill
-                      className="object-cover group-hover:scale-110 transition duration-500"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover object-center w-full h-full opacity-100"
                     />
 
-                    <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity">
+                    <div className="absolute inset-0 opacity-30 md:opacity-20 transition-opacity">
                       <div
                         className="h-full w-full"
                         style={{
@@ -187,7 +188,7 @@ export function Project() {
                       ></div>
                     </div>
 
-                    <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition">
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition">
                       <p className="text-white font-semibold text-lg">
                         Project Preview
                       </p>
