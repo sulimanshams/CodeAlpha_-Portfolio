@@ -65,6 +65,7 @@ const projects = [
   ],
 
   image:B,
+  live:"https://bank-account-ten.vercel.app"
 },
 {
   id: 5,
@@ -79,6 +80,7 @@ const projects = [
     'Interactive UI Feedback',
   ],
   image: Q,
+    live: "https://react-quiz-olive-eight.vercel.app"
 }
 ];
 
@@ -150,12 +152,13 @@ export function Project() {
                     ))}
                   </div>
 
-                  <button className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
+                  <button className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105"
+                   onClick={() => window.open(project.live, "_blank")}
+                  >
                     View Project
                   </button>
                 </motion.div>
 
-                {/* IMAGE CARD */}
                 <motion.div
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
@@ -184,7 +187,6 @@ export function Project() {
                       ></div>
                     </div>
 
-                    {/* DARK OVERLAY + TEXT */}
                     <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition">
                       <p className="text-white font-semibold text-lg">
                         Project Preview
