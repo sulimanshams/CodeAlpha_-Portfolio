@@ -6,6 +6,8 @@ import W from "@/public/e2.png"
 import P from "@/public/P.png"
 import B from "@/public/B.png"
 import Q from "@/public/q.png"
+import M from "@/public/Muisic.png"
+
 
 
 import Image from "next/image";
@@ -81,6 +83,22 @@ const projects = [
   ],
   image: Q,
     live: "https://react-quiz-olive-eight.vercel.app"
+},
+{
+  id: 6,
+  title: 'Music Play',
+  subtitle: 'Modern Music Player Experience',
+  description:
+    'A modern and fully responsive music player built to deliver a smooth and immersive listening experience. The project focuses on clean UI/UX design, seamless playback, and optimized performance across all devices.',
+  features: [
+    'Fully Responsive Design (Mobile, Tablet, Desktop)',
+    'Smooth Music Playback Controls',
+    'Modern UI with Clean User Experience',
+    'Dynamic Track Management',
+    'Optimized Performance & Fast Loading',
+  ],
+  image: M,
+  live: "https://music-player2-beta.vercel.app"
 }
 ];
 
